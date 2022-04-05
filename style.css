@@ -1,0 +1,102 @@
+body {
+    background: url('./pattern_Монтажная\ область\ 1.png');
+    background-size: 100%;
+}
+.content {
+    display: flex;
+    width: 50%;
+    margin-top: 14%;
+    margin-left: auto;
+    margin-right: auto;
+    /* justify-content: space-between; */
+}
+.content-text {
+    margin: auto;
+    margin-right: inherit;
+}
+.content-text-mobile {
+    display: none;
+}
+.content-img-mobile {
+    display: none;
+}
+.content-text .text{
+    border-radius: 8px;
+    background-color: #2596be;
+    padding: 8px 15px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Hive;
+}
+@font-face {
+    font-family: Hive;
+    src: url(./BHive/BHive-Bold.ttf);
+  }
+
+  @media only screen and (max-width: 576px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    body {
+        background: inherit;
+        background-size: 100%;
+    }
+    .content {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 14%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content-text {
+        display: none;
+    }
+    .content-img {
+        display: none;
+    }
+    .content-img-mobile {
+        display: block;
+        transform: scale(18.5);
+    }
+    .content-text-mobile {
+        display: block;
+        margin-top: 5em;
+        border-radius: 8px;
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 500;
+        width: 80%;
+        font-family: Hive;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content-text-mobile .text {
+        background-color: #2596be;
+        border-radius: 8px;
+        padding: 8px 15px;
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 500;
+        font-family: Hive;
+    }
+    .content-img {
+        text-align: center;
+    }
+    .content-img img {
+        width: 70%;
+    }
+  }
