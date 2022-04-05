@@ -13,12 +13,16 @@ body {
 .content-text {
     margin: auto;
     margin-right: inherit;
+    width: 40%;
 }
 .content-text-mobile {
     display: none;
 }
-.content-img-mobile {
-    display: none;
+.content-img {
+    width: 50%;
+}
+.content-img img {
+    width: 100%;
 }
 .content-text .text{
     border-radius: 8px;
@@ -33,18 +37,6 @@ body {
 @font-face {
     font-family: Hive;
     src: url(./BHive/BHive-Bold.ttf);
-  }
-
-  @media only screen and (max-width: 576px) {
-    body {
-      background-color: lightblue;
-    }
-  }
-
-  @media only screen and (max-width: 720px) {
-    body {
-      background-color: lightblue;
-    }
   }
 
   @media only screen and (max-width: 960px) {
@@ -63,13 +55,7 @@ body {
     .content-text {
         display: none;
     }
-    .content-img {
-        display: none;
-    }
-    .content-img-mobile {
-        display: block;
-        transform: scale(18.5);
-    }
+
     .content-text-mobile {
         display: block;
         margin-top: 5em;
@@ -94,7 +80,9 @@ body {
         font-family: Hive;
     }
     .content-img {
+        margin: auto;
         text-align: center;
+        width: 100%;
     }
     .content-img img {
         width: 70%;
